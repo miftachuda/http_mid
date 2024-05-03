@@ -15,7 +15,7 @@ func main() {
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	// Define the target URL
-	targetURL := "https://discord.com/api/webhooks/1235232270944702576/gmrZHO2D1Pz6aRx2MaGmgp3-qX00b2dM-Gb_5fBNmYWWYPwHrEpH3ZbnuLntupWWjZ1S" + r.URL.Path
+	targetURL := "https://discord.com/api/webhooks/1235232270944702576/gmrZHO2D1Pz6aRx2MaGmgp3-qX00b2dM-Gb_5fBNmYWWYPwHrEpH3ZbnuLntupWWjZ1S"
 
 	// Create a new HTTP request that replicates the original request
 	outReq, err := http.NewRequest(r.Method, targetURL, r.Body)
